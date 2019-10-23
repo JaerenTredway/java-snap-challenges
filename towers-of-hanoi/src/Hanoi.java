@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * This class runs a recursion that solves a Tower of Hanoi puzzle with
  * 3 poles and how ever many discs you choose
@@ -7,7 +9,14 @@
 class Hanoi {
 
     public static void main (String[] args) {
-        hanoi(2, 1, 3, 2);
+        int numDiscs = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Welcome to my Tower of Hanoi algorithm.");
+        System.out.println("Enter the number of discs you are using: ");
+        numDiscs = scanner.nextInt();
+        System.out.println("DO THESE MOVES TO SOLVE PUZZLE:");
+
+        hanoi(numDiscs, 1, 3, 2);
     }//End of main()
 
     /**
