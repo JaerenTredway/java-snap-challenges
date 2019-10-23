@@ -11,7 +11,6 @@ class Hanoi {
     }//End of main()
 
     /**
-     *
      * @param nDiscs    :the number of discs your puzzle uses
      * @param moveFrom  :the pole you are currently starting from
      * @param toTarget  :the pole you want your current stack to end up on
@@ -29,6 +28,11 @@ class Hanoi {
         }
     }//End of hanoi()
 
+    /**
+     * This method prints out the next move you need to do.
+     * @param moveFrom :move disc from here
+     * @param toTarget :to here
+     */
     public static void move (int moveFrom, int toTarget) {
         System.out.println (moveFrom + " -> " + toTarget);
     }//End of move()
