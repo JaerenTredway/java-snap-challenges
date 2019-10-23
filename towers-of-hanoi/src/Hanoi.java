@@ -1,9 +1,23 @@
+/**
+ * This class runs a recursion that solves a Tower of Hanoi puzzle with
+ * 3 poles and how ever many discs you choose
+ * @author Jaeren W. Tredway
+ * @version 1.0
+ */
 class Hanoi {
 
     public static void main (String[] args) {
         hanoi(2, 1, 3, 2);
     }//End of main()
 
+    /**
+     *
+     * @param nDiscs    :the number of discs your puzzle uses
+     * @param moveFrom  :the pole you are currently starting from
+     * @param toTarget  :the pole you want your current stack to end up on
+     * @param toHelper  :the intermediate pole you are using to get pieces
+     *                  out of the way
+     */
     public static void hanoi (int nDiscs, int moveFrom, int toTarget, int toHelper) {
 
         if (nDiscs == 1) {
