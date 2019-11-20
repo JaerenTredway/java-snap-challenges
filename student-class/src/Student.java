@@ -79,10 +79,12 @@ public class Student {
 
         System.out.println(a.toString());
         System.out.println(b);
+        System.out.println(a);
 
         System.out.println("make another student");
         Student c = new Student();
         System.out.println(c.toString());
+        System.out.println(c);
 
         System.out.println("change name");
         c.setName("George");
